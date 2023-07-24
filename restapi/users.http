@@ -1,0 +1,64 @@
+POST http://localhost:3000/users/register
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTE3Njg1fQ.hLRhfbhO3pWOdPjw60cjT5Zvavr7HZxZx8B_3l85lUk
+
+{
+  "firstName": "Bahriddin",
+  "lastName": "Boboyev",
+  "username": "bahriddin2",
+  "password": "12345"
+}
+  
+###
+POST http://localhost:3000/users/login
+Content-Type: application/json
+
+{
+  "username": "johndoe",
+  "password": "12345"
+}
+
+###
+GET http://localhost:3000/users
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTE3Njg1fQ.hLRhfbhO3pWOdPjw60cjT5Zvavr7HZxZx8B_3l85lUk
+
+###
+GET http://localhost:3000/users/4
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTE3Njg1fQ.hLRhfbhO3pWOdPjw60cjT5Zvavr7HZxZx8B_3l85lUk
+
+
+###
+GET http://localhost:3000/users/me
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTE3Njg1fQ.hLRhfbhO3pWOdPjw60cjT5Zvavr7HZxZx8B_3l85lUk
+
+
+###
+PATCH http://localhost:3000/users/me
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTE3Njg1fQ.hLRhfbhO3pWOdPjw60cjT5Zvavr7HZxZx8B_3l85lUk
+
+{
+    "firstName": "John",
+    "password": "12345"
+}
+
+###
+POST http://localhost:3000/users/add
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTE3Njg1fQ.hLRhfbhO3pWOdPjw60cjT5Zvavr7HZxZx8B_3l85lUk
+
+{
+  "firstName": "Bahriddin",
+  "lastName": "Boboyev",
+  "username": "bahriddin",
+  "password": "12345"
+
+}
+
+###
+DELETE http://localhost:3000/users/15
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjozLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTE3Njg1fQ.hLRhfbhO3pWOdPjw60cjT5Zvavr7HZxZx8B_3l85lUk

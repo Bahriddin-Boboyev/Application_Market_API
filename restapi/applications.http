@@ -1,0 +1,32 @@
+POST http://localhost:3000/application
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTkyMjUwfQ.Ak24v48v9ZsnFSDSy21eB8c-t1Snzg64FmLAHoqxEkk
+
+{
+"name": "GTA V",
+"categoryId": "2"
+}
+
+###
+GET http://localhost:3000/application
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTkyMjUwfQ.Ak24v48v9ZsnFSDSy21eB8c-t1Snzg64FmLAHoqxEkk
+
+###
+GET http://localhost:3000/application/2
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTkyMjUwfQ.Ak24v48v9ZsnFSDSy21eB8c-t1Snzg64FmLAHoqxEkk
+
+###
+PATCH http://localhost:3000/application/3
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTkyMjUwfQ.Ak24v48v9ZsnFSDSy21eB8c-t1Snzg64FmLAHoqxEkk
+
+{
+"categoryId": "2"
+}
+
+###
+DELETE http://localhost:3000/application/3
+Content-Type: application/json
+Authorization: eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.eyJ1c2VyIjp7ImlkIjoxLCJyb2xlIjoiYWRtaW4ifSwiaWF0IjoxNjkwMTkyMjUwfQ.Ak24v48v9ZsnFSDSy21eB8c-t1Snzg64FmLAHoqxEkk
